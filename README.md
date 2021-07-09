@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
--Semantic HTML elements are elements that serve a clear purpose. Humans and the browser can both look at a semantic HTML tag and know what kind of content goes inside of it. It helps people that use screen readers navigate website easier. Example: header, footer, nav, section
+-Semantic HTML elements are elements that serve a clear purpose. Humans and the browser can both look at a semantic HTML tag and know what kind of content goes inside of it. This helps people that use screen readers navigate websites easier. Example: header, footer, nav, section
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
 
@@ -50,7 +50,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. Explain why git is valuable to a team of developers.
 
--Git helps teams work together allowing a group work on the same project at a time, and track progress to go back to in case of a bug that breaks the site. Git essentially makes the process as efficient as possible.
+-Git helps teams work together by allowing a group of people to work on the same project at a time. Git commiting will help you track your progress, and even makes it possible to go back to a certain spot in your code. In the case of an unknown bug that breaks your site you can backtrack to old code, which is extremely helpful. Git, essentially, makes the process as efficient as possible.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
