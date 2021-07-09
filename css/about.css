@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+header{
+    height: 28vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+header nav{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 95%;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    transform: text-shadow 300ms ease;
+}
+header nav a:hover{
+    text-shadow:0px 0px 15px gray;
+}
+.about-section{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 2px dotted gray;
+    margin-bottom: 30px;
+    
+}
+.about-text{
+    width: 100%;
+    padding: 10px;
+}
+.card-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.card-info{
+    width: 41%;
+    height: 45vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    border-bottom: 2px dotted gray;
+    margin-bottom: 50px;
+}
+.card-info:nth-last-of-type(1){
+    margin-bottom: 0;
+}
+.card-info:nth-last-of-type(2){
+    margin-bottom: 0;
+}
+.card-text{
+    height: 41%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+p a{
+    display:block;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 125px;
+    margin-top: 20px;
+    color: black;
+    transition: background 300ms ease;
+}
+p a:hover{
+    background: yellow;
+}
+.closing-section{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.closing-text h2{
+    padding: 0px 60px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.closing-text p{
+    padding: 0px 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    transition: text-shadow 200ms ease;
+}
+footer nav a:hover {
+    text-shadow:0px 0px 15px white;
+}
+
+@media screen and (max-width:1916px){
+    .card-section{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .card-info{
+        width: 41%;
+        height: 45vh;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        border-bottom: 2px dotted gray;
+        margin-bottom: 50px;
+    }
+    .card-info:nth-last-of-type(1){
+        margin-bottom: 0;
+    }
+    .card-info:nth-last-of-type(2){
+        margin-bottom: 0;
+    }
+    .card-text{
+        height: 41%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+    p a{
+        display:block;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 115px;
+        margin-top: 20px;
+        color: black;
+        transition: background 300ms ease;
+    }    
+}
+
+@media screen and (max-width:920px){
+    *{
+        max-width: 100%;
+    }
+    header{
+        height: 20vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+    header nav{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+    }
+    header nav a{
+        text-decoration: none;
+        color: black;
+        transition: text-shadow 300ms ease;
+    }
+    header nav a:nth-of-type(2){
+        display: none;
+    }
+    header nav a:nth-of-type(3){
+        order: -1;
+    }
+    /* using order to rearrange the lambda logo into the middle of the screen */
+    header nav a:nth-of-type(4){
+        order: -1;
+    }
+    header nav a:hover{
+        text-shadow:0px 0px 10px rgb(117, 117, 117);
+    }
+}
+@media screen and (max-width:700px){
+    header nav a{
+        align-self: baseline;
+    }
+    .card-section{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .card-info{
+        width: 41%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        border-bottom: 2px dotted gray;
+        margin-bottom: 50px;
+    }
+    .card-info:nth-last-of-type(1){
+        margin-bottom: 0;
+    }
+    .card-info:nth-last-of-type(2){
+        margin-bottom: 0;
+    }
+    .card-text{
+        height: 41%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+}
