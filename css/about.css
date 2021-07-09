@@ -86,11 +86,9 @@ header nav{
 header nav a{
     text-decoration: none;
     color: black;
-    transform: all 300ms ease;
+    transform: text-shadow 300ms ease;
 }
 header nav a:hover{
-    text-decoration: none;
-    color: black;
     text-shadow:0px 0px 10px gray;
 }
 .about-section{
@@ -122,6 +120,12 @@ header nav a:hover{
     border-bottom: 2px dotted gray;
     margin-bottom: 50px;
 }
+.card-info:nth-last-of-type(1){
+    margin-bottom: 0;
+}
+.card-info:nth-last-of-type(2){
+    margin-bottom: 0;
+}
 .card-text{
     height: 41%;
     display: flex;
@@ -143,6 +147,14 @@ p a{
 p a:hover{
     background: yellow;
 }
+/* .closing-section{
+    width: 100%;
+    display: flex;
+} */
+.closing-text h2, .closing-text p{
+    padding: 20px 50px;
+    margin-bottom: 0;
+}
 footer {
     width: 100%;
     background: black;
@@ -160,9 +172,8 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
-    transition: all 200ms ease;
+    transition: text-shadow 200ms ease;
 }
 footer nav a:hover {
     text-shadow:0px 0px 10px white;
-    text-decoration: none;
 }
