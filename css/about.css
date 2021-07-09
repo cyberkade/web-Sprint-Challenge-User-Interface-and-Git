@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 header{
@@ -101,22 +101,48 @@ header nav a:hover{
     justify-content: center;
     margin: 0 auto;
     border-bottom: 3px dotted gray;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
 }
 .about-text{
     width: 100%;
-    align-self: center;
     padding: 10px;
 }
 .card-section{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.card-info{
+    width: 41%;
+    height: 45vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    border-bottom: 2px dotted gray;
+    margin-bottom: 50px;
 }
 .card-text{
-
+    height: 41%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 10px 0;
 }
-
+p a{
+    display:block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 115px;
+    margin-top: 20px;
+    color: black;
+    transition: background 300ms ease;
+}
+p a:hover{
+    background: yellow;
+}
 footer {
     width: 100%;
     background: black;
